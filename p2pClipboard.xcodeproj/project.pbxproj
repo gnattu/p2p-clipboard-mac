@@ -8,18 +8,38 @@
 
 /* Begin PBXBuildFile section */
 		376E686D2B5AE353005B5A71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376E686C2B5AE353005B5A71 /* AppDelegate.swift */; };
-		376E686F2B5AE353005B5A71 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376E686E2B5AE353005B5A71 /* ViewController.swift */; };
 		376E68712B5AE354005B5A71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 376E68702B5AE354005B5A71 /* Assets.xcassets */; };
 		376E68742B5AE354005B5A71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 376E68722B5AE354005B5A71 /* Main.storyboard */; };
+		376E687D2B5AE3B2005B5A71 /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 376E687C2B5AE3B2005B5A71 /* LaunchAtLogin */; };
+		376E687F2B5AE3F4005B5A71 /* ActionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376E687E2B5AE3F4005B5A71 /* ActionManager.swift */; };
+		376E68882B5BA1DE005B5A71 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376E68872B5BA1DE005B5A71 /* SettingsView.swift */; };
+		376E688B2B5BC6FF005B5A71 /* p2p-clipboard in CopyFiles */ = {isa = PBXBuildFile; fileRef = 376E688A2B5BC6FF005B5A71 /* p2p-clipboard */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		376E688D2B5C0583005B5A71 /* AlertWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376E688C2B5C0583005B5A71 /* AlertWindowController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		376E68892B5BC6DA005B5A71 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				376E688B2B5BC6FF005B5A71 /* p2p-clipboard in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		376E68692B5AE353005B5A71 /* p2pClipboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = p2pClipboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		376E686C2B5AE353005B5A71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		376E686E2B5AE353005B5A71 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		376E68702B5AE354005B5A71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		376E68732B5AE354005B5A71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		376E68752B5AE354005B5A71 /* p2pClipboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = p2pClipboard.entitlements; sourceTree = "<group>"; };
+		376E687E2B5AE3F4005B5A71 /* ActionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionManager.swift; sourceTree = "<group>"; };
+		376E68872B5BA1DE005B5A71 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		376E688A2B5BC6FF005B5A71 /* p2p-clipboard */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = "p2p-clipboard"; path = "bin/p2p-clipboard"; sourceTree = "<group>"; };
+		376E688C2B5C0583005B5A71 /* AlertWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertWindowController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				376E687D2B5AE3B2005B5A71 /* LaunchAtLogin in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,6 +57,7 @@
 		376E68602B5AE353005B5A71 = {
 			isa = PBXGroup;
 			children = (
+				376E688A2B5BC6FF005B5A71 /* p2p-clipboard */,
 				376E686B2B5AE353005B5A71 /* p2pClipboard */,
 				376E686A2B5AE353005B5A71 /* Products */,
 			);
@@ -53,10 +75,12 @@
 			isa = PBXGroup;
 			children = (
 				376E686C2B5AE353005B5A71 /* AppDelegate.swift */,
-				376E686E2B5AE353005B5A71 /* ViewController.swift */,
 				376E68702B5AE354005B5A71 /* Assets.xcassets */,
 				376E68722B5AE354005B5A71 /* Main.storyboard */,
 				376E68752B5AE354005B5A71 /* p2pClipboard.entitlements */,
+				376E687E2B5AE3F4005B5A71 /* ActionManager.swift */,
+				376E68872B5BA1DE005B5A71 /* SettingsView.swift */,
+				376E688C2B5C0583005B5A71 /* AlertWindowController.swift */,
 			);
 			path = p2pClipboard;
 			sourceTree = "<group>";
@@ -71,12 +95,17 @@
 				376E68652B5AE353005B5A71 /* Sources */,
 				376E68662B5AE353005B5A71 /* Frameworks */,
 				376E68672B5AE353005B5A71 /* Resources */,
+				37125EC52B6D035B008D26ED /* ShellScript */,
+				376E68892B5BC6DA005B5A71 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = p2pClipboard;
+			packageProductDependencies = (
+				376E687C2B5AE3B2005B5A71 /* LaunchAtLogin */,
+			);
 			productName = p2pClipboard;
 			productReference = 376E68692B5AE353005B5A71 /* p2pClipboard.app */;
 			productType = "com.apple.product-type.application";
@@ -105,6 +134,9 @@
 				Base,
 			);
 			mainGroup = 376E68602B5AE353005B5A71;
+			packageReferences = (
+				376E687B2B5AE3B2005B5A71 /* XCRemoteSwiftPackageReference "LaunchAtLogin" */,
+			);
 			productRefGroup = 376E686A2B5AE353005B5A71 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,13 +158,36 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		37125EC52B6D035B008D26ED /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${BUILT_PRODUCTS_DIR}/LaunchAtLogin_LaunchAtLogin.bundle/Contents/Resources/copy-helper-swiftpm.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		376E68652B5AE353005B5A71 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				376E686F2B5AE353005B5A71 /* ViewController.swift in Sources */,
+				376E68882B5BA1DE005B5A71 /* SettingsView.swift in Sources */,
 				376E686D2B5AE353005B5A71 /* AppDelegate.swift in Sources */,
+				376E688D2B5C0583005B5A71 /* AlertWindowController.swift in Sources */,
+				376E687F2B5AE3F4005B5A71 /* ActionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,7 +242,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -250,7 +305,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -278,6 +333,8 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -285,6 +342,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = net.gnattu.p2pClipboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -303,6 +361,8 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -310,6 +370,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = net.gnattu.p2pClipboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -340,6 +401,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		376E687B2B5AE3B2005B5A71 /* XCRemoteSwiftPackageReference "LaunchAtLogin" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/LaunchAtLogin";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		376E687C2B5AE3B2005B5A71 /* LaunchAtLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 376E687B2B5AE3B2005B5A71 /* XCRemoteSwiftPackageReference "LaunchAtLogin" */;
+			productName = LaunchAtLogin;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 376E68612B5AE353005B5A71 /* Project object */;
 }
