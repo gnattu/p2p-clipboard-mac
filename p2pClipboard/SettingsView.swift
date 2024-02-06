@@ -22,12 +22,14 @@ struct SettingsView: View {
     @AppStorage("SetListen") private var setListen = false
     @AppStorage("SetPrivateKey") private var setPrivateKey = false
     @AppStorage("DisableMdns") private var disableMdns = false
+    @AppStorage("SetPSK") private var setPsk = false
     @AppStorage("ConnectIP") private var connectIp = ""
     @AppStorage("ConnectPort") private var connectPort = ""
     @AppStorage("ConnectPeerID") private var connectPeerId = ""
     @AppStorage("ListenIP") private var listenIp = ""
     @AppStorage("ListenPort") private var listenPort = ""
     @AppStorage("PrivateKeyPath") private var privateKeyPath = ""
+    @StateObject var pskStore = PreSharedKeyStore()
     
     var body: some View {
         VStack {
@@ -72,6 +74,10 @@ struct SettingsView: View {
                     .frame(width: 93)
                 }
                 Divider()
+                Toggle("Set Pre-Shared Key:", isOn: $setPsk)
+                SecureField("Key:", text: $pskStore.inputPsk, prompt: Text("******"))
+                    .disabled(!setPsk)
+                Divider()
                 Toggle("Disable mDNS", isOn: $disableMdns)
                 LaunchAtLogin.Toggle {
                     Text("Launch at Login")
@@ -79,6 +85,7 @@ struct SettingsView: View {
             }
             Form {
                 Button("Apply & Restart") {
+                    pskStore.commitSettings()
                     ActionManager.restart()
                 }
             }

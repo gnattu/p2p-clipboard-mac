@@ -15,6 +15,9 @@
 		376E68882B5BA1DE005B5A71 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376E68872B5BA1DE005B5A71 /* SettingsView.swift */; };
 		376E688B2B5BC6FF005B5A71 /* p2p-clipboard in CopyFiles */ = {isa = PBXBuildFile; fileRef = 376E688A2B5BC6FF005B5A71 /* p2p-clipboard */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		376E688D2B5C0583005B5A71 /* AlertWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376E688C2B5C0583005B5A71 /* AlertWindowController.swift */; };
+		37CE235B2B713D0400CB6391 /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CE235A2B713D0400CB6391 /* KeychainWrapper.swift */; };
+		37CE235D2B713D3900CB6391 /* KeychainItemAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CE235C2B713D3900CB6391 /* KeychainItemAccessibility.swift */; };
+		37CE235F2B713D9100CB6391 /* AppSecureStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CE235E2B713D9100CB6391 /* AppSecureStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,6 +43,9 @@
 		376E68872B5BA1DE005B5A71 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		376E688A2B5BC6FF005B5A71 /* p2p-clipboard */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = "p2p-clipboard"; path = "bin/p2p-clipboard"; sourceTree = "<group>"; };
 		376E688C2B5C0583005B5A71 /* AlertWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertWindowController.swift; sourceTree = "<group>"; };
+		37CE235A2B713D0400CB6391 /* KeychainWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
+		37CE235C2B713D3900CB6391 /* KeychainItemAccessibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainItemAccessibility.swift; sourceTree = "<group>"; };
+		37CE235E2B713D9100CB6391 /* AppSecureStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSecureStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,9 @@
 				376E687E2B5AE3F4005B5A71 /* ActionManager.swift */,
 				376E68872B5BA1DE005B5A71 /* SettingsView.swift */,
 				376E688C2B5C0583005B5A71 /* AlertWindowController.swift */,
+				37CE235A2B713D0400CB6391 /* KeychainWrapper.swift */,
+				37CE235C2B713D3900CB6391 /* KeychainItemAccessibility.swift */,
+				37CE235E2B713D9100CB6391 /* AppSecureStorage.swift */,
 			);
 			path = p2pClipboard;
 			sourceTree = "<group>";
@@ -187,6 +196,9 @@
 				376E68882B5BA1DE005B5A71 /* SettingsView.swift in Sources */,
 				376E686D2B5AE353005B5A71 /* AppDelegate.swift in Sources */,
 				376E688D2B5C0583005B5A71 /* AlertWindowController.swift in Sources */,
+				37CE235B2B713D0400CB6391 /* KeychainWrapper.swift in Sources */,
+				37CE235D2B713D3900CB6391 /* KeychainItemAccessibility.swift in Sources */,
+				37CE235F2B713D9100CB6391 /* AppSecureStorage.swift in Sources */,
 				376E687F2B5AE3F4005B5A71 /* ActionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

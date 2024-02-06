@@ -54,6 +54,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
         let setListen = defaults.object(forKey:"SetListen") as? Bool ?? false
         let setPrivateKey = defaults.object(forKey:"SetPrivateKey") as? Bool ?? false
         let disableMdns = defaults.object(forKey:"DisableMdns") as? Bool ?? false
+        let setPsk = defaults.object(forKey:"SetPSK") as? Bool ?? false
         let connectIp = defaults.object(forKey:"ConnectIP") as? String ?? ""
         let connectPort = defaults.object(forKey:"ConnectPort") as? String ?? ""
         let connectPeerId = defaults.object(forKey:"ConnectPeerID") as? String ?? ""
@@ -82,6 +83,13 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
         if (setPrivateKey) {
             args.append("-k")
             args.append(privateKeyPath)
+        }
+        if (setPsk) {
+            let psk = KeychainWrapper.standard.string(forKey: "PSK", withAccessibility: KeychainItemAccessibility.whenUnlocked) ?? ""
+            if (!psk.isEmpty) {
+                args.append("-p")
+                args.append(psk)
+            }
         }
         if (disableMdns) {
             args.append("--no-mdns")
