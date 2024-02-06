@@ -31,6 +31,7 @@ git clone https://github.com/gnattu/p2p-clipboard-mac.git
 - macOS may present warnings about the app, such as "App needs to be updated" or "App is damaged", depending on your macOS version.
   - For macOS 13+ users, navigate to `System Settings -> Security & Privacy` and then scroll down to allow this app.
   - macOS 12 users may need to manually execute `xattr -r -d com.apple.quarantine /Applications/p2pClipboard.app` in the command line.
+- If something bad happens and you need to kill the app, please make sure you kill both the wrapper and the core process in Activity Monitor. There will be one with an icon named `p2pClipboard` and one named `p2p-clipboard` without an icon. Both need to be killed.
 
 ## Cleanup
 
