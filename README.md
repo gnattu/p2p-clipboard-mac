@@ -28,6 +28,9 @@ git clone https://github.com/gnattu/p2p-clipboard-mac.git
 - Due to macOS limitations, if you update or reinstall the application, you may need to:
 	-  Re-enable the "Launch at Login" option.
 	-  Re-enter your user password for keychain access.
+- macOS may present warnings about the app, such as "App needs to be updated" or "App is damaged", depending on your macOS version.
+  - For macOS 13+ users, navigate to `System Preferences -> Security & Privacy` and then scroll down to allow this app.
+  - macOS 12 users may need to manually execute `xattr -r -d com.apple.quarantine /Applications/p2pClipboard.app` in the command line.
 
 ## Cleanup
 
